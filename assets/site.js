@@ -6,6 +6,7 @@ const siteConfig = {
   phoneSecondary: "+91 9818085784",
   phoneLink: "tel:+919319662944",
   whatsappNumber: "919319662944",
+  logoPath: "assets/samrijo-logo.png",
   whatsappGeneral: "https://wa.me/919319662944?text=Hello%20I%20would%20like%20to%20book%20a%20consultation%20with%20Samrijo%20Hospital",
   address: "Main Burari Rd, near Janta Medicos, Delhi",
   workingHours: {
@@ -115,11 +116,13 @@ function renderNavbar() {
       <div class="mx-auto max-w-7xl">
         <div class="glass-panel rounded-[1.6rem] border border-white/70 px-5 py-3 shadow-[0_24px_60px_rgba(15,23,42,0.12)]">
           <div class="flex items-center justify-between gap-4">
-            <a href="index.html" class="flex items-center gap-3">
-              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-sky-500 text-lg font-extrabold text-white shadow-lg shadow-blue-500/20">S</div>
+            <a href="index.html" class="brand-lockup">
+              <div class="brand-logo-shell brand-logo-header">
+                <img src="${siteConfig.logoPath}" alt="${siteConfig.hospitalName} logo" loading="eager" />
+              </div>
               <div>
-                <p class="font-display text-base font-bold text-slate-950 sm:text-lg">${siteConfig.hospitalName}</p>
-                <p class="text-xs font-semibold uppercase tracking-[0.25em] text-blue-600">${siteConfig.tagline}</p>
+                <p class="brand-text-title font-display text-lg font-bold text-slate-950 sm:text-xl">${siteConfig.hospitalName}</p>
+                <p class="brand-text-tagline text-[0.68rem] font-semibold uppercase tracking-[0.26em] text-blue-600 sm:text-xs">${siteConfig.tagline}</p>
               </div>
             </a>
             <nav class="hidden items-center gap-7 lg:flex">
@@ -181,11 +184,13 @@ function renderFooter() {
     <footer class="mt-20 bg-slate-950 text-white">
       <div class="mx-auto grid max-w-7xl gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[1.15fr_0.85fr_1fr] lg:px-8">
         <div>
-          <div class="mb-5 flex items-center gap-3">
-            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-sky-400 text-lg font-extrabold text-white">S</div>
+          <div class="mb-5 brand-lockup">
+            <div class="brand-logo-shell brand-logo-footer">
+              <img src="${siteConfig.logoPath}" alt="${siteConfig.hospitalName} logo" loading="lazy" />
+            </div>
             <div>
-              <p class="font-display text-xl font-bold">${siteConfig.hospitalName}</p>
-              <p class="text-sm text-blue-200">${siteConfig.tagline}</p>
+              <p class="brand-text-title font-display text-xl font-bold">${siteConfig.hospitalName}</p>
+              <p class="brand-text-tagline text-sm text-blue-200">${siteConfig.tagline}</p>
             </div>
           </div>
           <p class="max-w-md text-sm leading-7 text-slate-300">
