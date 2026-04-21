@@ -118,7 +118,7 @@ samrijo-hospital/
 ## ⚙️ Setup
 
 1. Open the website:
-git clonehttps://herox21.github.io/samrijo-hospital/
+git clone https://herox21.github.io/samrijo-hospital/.git
 
 2. Open index.html in your browser.
 
